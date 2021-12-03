@@ -8,8 +8,8 @@ import (
 	"strings"
 )
 
-func readFileText() []string {
-	file, err := os.Open("day2.txt")
+func readFileText(fileName string) []string {
+	file, err := os.Open(fileName)
 
 	if err != nil {
 		fmt.Println(err)
