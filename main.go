@@ -34,11 +34,21 @@ func main() {
 	// fmt.Printf("Day 4 Part 1: %d\n", ret)
 	// fmt.Printf("Day 4 Part 2: %d\n", ret2)
 
-	x, y := readDay5File()
+	// x, y := readDay5File()
 
-	ret := day5Solution(x, y, false)
-	ret2 := day5Solution(x, y, true)
+	// ret := day5Solution(x, y, false)
+	// ret2 := day5Solution(x, y, true)
 
-	fmt.Printf("Day 5 Part One: %d\n", ret)
-	fmt.Printf("Day 5 Part Two: %d\n", ret2)
+	// fmt.Printf("Day 5 Part One: %d\n", ret)
+	// fmt.Printf("Day 5 Part Two: %d\n", ret2)
+
+	nums := day6ReadFile()
+	//retVal := day6SolutionPartOne(nums, 256)
+	// retVal2 := day6SolutionPartOne(nums, 1)
+
+	// 362639
+	//fmt.Printf("Day 6 Value: %d\n", retVal)
+	ret := day6Solution(nums, 256)
+	fmt.Println(ret)
+	// fmt.Printf("Day 6 Part Two: %d\n", retVal2)
 }
