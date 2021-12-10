@@ -61,10 +61,16 @@ func main() {
 	// ret2 := day8SolutionPartTwo(signalPatterns, output)
 	// fmt.Printf("Day 8 Part Two: %d\n", ret2)
 
-	nums := day9ReadFile()
-	ret := day9Solution(nums)
-	ret2 := day9SolutionPartTwo(nums)
+	// nums := day9ReadFile()
+	// ret := day9Solution(nums)
+	// ret2 := day9SolutionPartTwo(nums)
 
-	fmt.Printf("Day 9 part one: %d\n", ret)
-	fmt.Printf("Day 9 part two: %d\n", ret2)
+	// fmt.Printf("Day 9 part one: %d\n", ret)
+	// fmt.Printf("Day 9 part two: %d\n", ret2)
+
+	input := day10ReadFromFile()
+	ret, ret2 := day10SolutionPartOne(input)
+
+	fmt.Printf("Day 10 solution part one: %d\n", ret)
+	fmt.Printf("Day 10 solution part two: %d\n", ret2)
 }
