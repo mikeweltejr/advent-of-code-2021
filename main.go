@@ -68,9 +68,16 @@ func main() {
 	// fmt.Printf("Day 9 part one: %d\n", ret)
 	// fmt.Printf("Day 9 part two: %d\n", ret2)
 
-	input := day10ReadFromFile()
-	ret, ret2 := day10SolutionPartOne(input)
+	// input := day10ReadFromFile()
+	// ret, ret2 := day10SolutionPartOne(input)
 
-	fmt.Printf("Day 10 solution part one: %d\n", ret)
-	fmt.Printf("Day 10 solution part two: %d\n", ret2)
+	// fmt.Printf("Day 10 solution part one: %d\n", ret)
+	// fmt.Printf("Day 10 solution part two: %d\n", ret2)
+
+	input := day11ReadFile()
+	ret := day11Soution(input, 100)
+	fmt.Printf("Day 11 part one: %d\n", ret)
+	input = day11ReadFile()
+	ret2 := day11SolutionPartTwo(input)
+	fmt.Printf("Day 11 part two: %d\n", ret2)
 }
