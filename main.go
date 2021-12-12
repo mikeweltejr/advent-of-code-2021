@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// nums := readFile()
 
@@ -74,10 +72,14 @@ func main() {
 	// fmt.Printf("Day 10 solution part one: %d\n", ret)
 	// fmt.Printf("Day 10 solution part two: %d\n", ret2)
 
-	input := day11ReadFile()
-	ret := day11Soution(input, 100)
-	fmt.Printf("Day 11 part one: %d\n", ret)
-	input = day11ReadFile()
-	ret2 := day11SolutionPartTwo(input)
-	fmt.Printf("Day 11 part two: %d\n", ret2)
+	// input := day11ReadFile()
+	// ret := day11Soution(input, 100)
+	// fmt.Printf("Day 11 part one: %d\n", ret)
+	// input = day11ReadFile()
+	// ret2 := day11SolutionPartTwo(input)
+	// fmt.Printf("Day 11 part two: %d\n", ret2)
+
+	input := day12ReadFile()
+	//countPaths(input, 1)
+	countPaths(input, 2)
 }
