@@ -79,7 +79,12 @@ func main() {
 	// ret2 := day11SolutionPartTwo(input)
 	// fmt.Printf("Day 11 part two: %d\n", ret2)
 
-	input := day12ReadFile()
-	//countPaths(input, 1)
-	countPaths(input, 2)
+	// input := day12ReadFile()
+	// //countPaths(input, 1)
+	// countPaths(input, 2)
+
+	coordinates, instructions := day13ReadFile()
+
+	day13Solution(coordinates, instructions, 1)
+	day13Solution(coordinates, instructions, 2)
 }
