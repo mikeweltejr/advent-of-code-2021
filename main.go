@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// nums := readFile()
 
@@ -83,8 +85,12 @@ func main() {
 	// //countPaths(input, 1)
 	// countPaths(input, 2)
 
-	coordinates, instructions := day13ReadFile()
+	// coordinates, instructions := day13ReadFile()
 
-	day13Solution(coordinates, instructions, 1)
-	day13Solution(coordinates, instructions, 2)
+	// day13Solution(coordinates, instructions, 1)
+	// day13Solution(coordinates, instructions, 2)
+
+	templateStr, polymerMap := day14ReadFile()
+	ret := day14Solution(templateStr, polymerMap, 40)
+	fmt.Printf("Day 14 Solution: %d\n", ret)
 }
