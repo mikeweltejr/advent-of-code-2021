@@ -1,9 +1,28 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strconv"
 )
+
+func readFileText(fileName string) []string {
+	file, err := os.Open(fileName)
+
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
+
+	var strs []string
+
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		strs = append(strs, scanner.Text())
+	}
+	return strs
+}
 
 func day3Solution(binaryArray []string) int64 {
 	gammaBit := filterBinary(binaryArray, 0, 1)
